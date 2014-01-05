@@ -1,0 +1,5 @@
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\bin\Release\Nonoe.ActionFolders.Objects.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\bin\Release\Nonoe.ActionFolders.Objects.pdb
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\obj\Release\Nonoe.ActionFolders.Objects.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\obj\Release\Nonoe.ActionFolders.Objects.pdb

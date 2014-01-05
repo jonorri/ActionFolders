@@ -1,0 +1,6 @@
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\bin\Debug\Nonoe.ActionFolders.UnitTests.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\bin\Debug\Nonoe.ActionFolders.UnitTests.pdb
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\obj\Debug\Nonoe.ActionFolders.UnitTests.csproj.ResolveComReference.cache
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\obj\Debug\Nonoe.ActionFolders.UnitTests.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.UnitTests\obj\Debug\Nonoe.ActionFolders.UnitTests.pdb

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" UpgradeCode="a2aa1d99-2967-4104-b912-51c944e4ec87" Version="1.0.0.0" Language="1033" Name="Action Folders" Manufacturer="Nonoe">
+    <Package InstallerVersion="300" Compressed="yes"/>
+    <Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+
+    <!-- Step 1: Define the directory structure -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="COMPANYROOTDIRECTORY" Name="Nonoe">
+          <Directory Id="APPLICATIONROOTDIRECTORY" Name="ActionFolders">
+            <Directory Id="RESOURCESFOLDER" Name="Resources"/>
+            <Directory Id="SCRIPTSFOLDER" Name="Scripts"/>
+            <Directory Id="LOGFOLDER" Name="Log">
+              <Component Id="LOGFOLDER" Guid="1772B9EC-B92B-4DCC-9313-74C66642AEAE" SharedDllRefCount="no" KeyPath="no" NeverOverwrite="no" Permanent="no" Transitive="no" Win64="no" Location="either">
+                <CreateFolder/>
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- Step 2: Add files to your installer package -->
+    <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+      <Component Id="Nonoe.ActionFolders.GUI.exe" Guid="91000B05-ECE2-48A6-960C-5BC0CD7FC2D5">
+        <File Id="Nonoe.ActionFolders.GUI.exe" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.exe" KeyPath="yes" Checksum="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.BusinessLogic.dll" Guid="E1A0A759-B21D-4CF9-ABBA-EF83AFAA0053">
+        <File Id="Nonoe.ActionFolders.BusinessLogic.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.BusinessLogic.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.DAL.dll" Guid="E95D6A1C-AE4C-4BBF-A5E9-D8C2B97AC5D0">
+        <File Id="Nonoe.ActionFolders.DAL.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.DAL.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="System.Data.SQLite.dll" Guid="9447628F-89BB-4A9A-B1FA-D2DF0611A236">
+        <File Id="System.Data.SQLite.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\System.Data.SQLite.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.Runners.dll" Guid="11000214-1C0C-4C4C-8EF9-7265E9774E0B">
+        <File Id="Nonoe.ActionFolders.Runners.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.Runners.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.Objects.dll" Guid="F846F7B8-D1A0-4D82-811F-6E37B4653351">
+        <File Id="Nonoe.ActionFolders.Objects.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.Objects.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.vshost.exe.manifest" Guid="162ADAC2-8319-40AB-813F-F65392AF7D8E">
+        <File Id="Nonoe.ActionFolders.GUI.vshost.exe.manifest" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.vshost.exe.manifest" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.vshost.exe.config" Guid="77E3109A-F576-460F-999E-F6EEEA775143">
+        <File Id="Nonoe.ActionFolders.GUI.vshost.exe.config" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.vshost.exe.config" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.vshost.exe" Guid="C96FEC1E-2271-4D22-B51E-CF8779ABF999">
+        <File Id="Nonoe.ActionFolders.GUI.vshost.exe" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.vshost.exe" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.vshost.application" Guid="E64D0D30-0987-4CC2-B198-DC109766A59C">
+        <File Id="Nonoe.ActionFolders.GUI.vshost.application" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.vshost.application" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.exe.manifest" Guid="1514D5F8-C7E8-462F-A3D6-8E6108BEDD27">
+        <File Id="Nonoe.ActionFolders.GUI.exe.manifest" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.exe.manifest" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.exe.config" Guid="E0E979F6-613B-44D6-9DD8-9FEFB6D3CE3D">
+        <File Id="Nonoe.ActionFolders.GUI.exe.config" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.exe.config" KeyPath="yes"/>
+      </Component>
+      <Component Id="Nonoe.ActionFolders.GUI.application" Guid="ED147EF6-E209-4611-B5A6-47BEC057AB93">
+        <File Id="Nonoe.ActionFolders.GUI.application" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Nonoe.ActionFolders.GUI.application" KeyPath="yes"/>
+      </Component>
+      <Component Id="log4net.xml" Guid="A32219E7-8F71-4F54-956A-12C231369F95">
+        <File Id="log4net.xml" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\log4net.xml" KeyPath="yes"/>
+      </Component>
+      <Component Id="log4net.dll" Guid="AF005B4E-2815-47B5-B864-AE8D5C8F391F">
+        <File Id="log4net.dll" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\log4net.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="log4net.config" Guid="8B2F2A49-2DEB-4533-B8D6-28E6B17A3126">
+        <File Id="log4net.config" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\log4net.config" KeyPath="yes"/>
+      </Component>
+      <Component Id="app.config" Guid="E46BCBFF-4185-4E71-8B50-061C0DBEA21B">
+        <File Id="app.config" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\app.config" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="RESOURCESFOLDER">
+      <Component Id="afico.ico" Guid="47809388-5F7C-43BD-8629-472577850D8D">
+        <File Id="afico.ico" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Resources\afico.ico" KeyPath="yes"/>
+      </Component>
+      <Component Id="actionFolders.db" Guid="9F400858-21A4-44F8-BE1E-387418146993">
+        <File Id="actionFolders.db" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Resources\actionFolders.db" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="SCRIPTSFOLDER">
+      <Component Id="EmailSending.rb" Guid="CAB568B4-E60E-4D9D-A92C-1D026B3C68C7">
+        <File Id="EmailSending.rb" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Scripts\EmailSending.rb" KeyPath="yes"/>
+      </Component>
+      <Component Id="IsServiceUp.rb" Guid="816DFA44-E041-4A30-A08C-EEFA538FBE98">
+        <File Id="IsServiceUp.rb" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Scripts\IsServiceUp.rb" KeyPath="yes"/>
+      </Component>
+      <Component Id="OpenFileWithProgram.py" Guid="4030868E-74C5-42C6-8CA9-049C17A5BEBA">
+        <File Id="OpenFileWithProgram.py" Source="..\Nonoe.ActionFolders.GUI\bin\Debug\Scripts\OpenFileWithProgram.py" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Step 3: Tell WiX to install the files -->
+    <Feature Id="Complete" Title="Action Folders" Description="The complete package." Display="expand" Level="1" ConfigurableDirectory="APPLICATIONROOTDIRECTORY">
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.exe" />
+      <ComponentRef Id="Nonoe.ActionFolders.BusinessLogic.dll" />
+      <ComponentRef Id="Nonoe.ActionFolders.DAL.dll" />
+      <ComponentRef Id="app.config" />
+      <ComponentRef Id="log4net.config" />
+      <ComponentRef Id="log4net.dll" />
+      <ComponentRef Id="log4net.xml" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.application" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.exe.config" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.exe.manifest" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.vshost.application" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.vshost.exe" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.vshost.exe.config" />
+      <ComponentRef Id="Nonoe.ActionFolders.GUI.vshost.exe.manifest" />
+      <ComponentRef Id="Nonoe.ActionFolders.Objects.dll" />
+      <ComponentRef Id="Nonoe.ActionFolders.Runners.dll" />
+      <ComponentRef Id="System.Data.SQLite.dll" />
+      <ComponentRef Id="afico.ico" />
+      <ComponentRef Id="actionFolders.db" />
+      <ComponentRef Id="EmailSending.rb" />
+      <ComponentRef Id="IsServiceUp.rb" />
+      <ComponentRef Id="OpenFileWithProgram.py" />
+      <ComponentRef Id="LOGFOLDER"/>
+    </Feature>
+
+    <UIRef Id="WixUI_Mondo" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+
+  </Product>
+</Wix>

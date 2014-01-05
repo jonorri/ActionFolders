@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="43b67099-59f5-4a47-9e8f-8ed8d506073a" name="jonorri@JONORRI-WS 2012-05-29 17:56:52" runUser="CCP\jonorri" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9e69a58-3727-493a-bc1c-586c01203704">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jonorri_JONORRI-WS 2012-05-29 17_56_52">
+      <DeploymentItem filename="C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.Objects\bin\Debug\Nonoe.ActionFolders.Objects.dll" />
+      <DeploymentItem filename="C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\bin\Debug\Nonoe.ActionFolders.DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-29T17:56:52.5240118+00:00" queuing="2012-05-29T17:56:54.1970118+00:00" start="2012-05-29T17:56:54.3860118+00:00" finish="2012-05-29T17:57:05.2010118+00:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="JONORRI-WS" outcome="Error" timestamp="2012-05-29T17:57:05.2000118+00:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestRemoveActionFolder" storage="c:\users\jonorri\skydrive\sc\bitbucket\actionfolders-practice\nonoe.actionfolders\nonoe.actionfolders.tests\bin\debug\nonoe.actionfolders.tests.dll" id="893605cd-a9f6-3277-ee1a-3ea98d57191b">
+      <Execution id="adea9f6d-8cdf-40a5-a406-4152869dd47d" />
+      <TestMethod codeBase="C:/Users/jonorri/SkyDrive/sc/BitBucket/actionfolders-practice/Nonoe.ActionFolders/Nonoe.ActionFolders.Tests/bin/Debug/Nonoe.ActionFolders.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Nonoe.ActionFolders.Tests.ActionFolderDalTest, Nonoe.ActionFolders.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemoveActionFolder" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="893605cd-a9f6-3277-ee1a-3ea98d57191b" executionId="adea9f6d-8cdf-40a5-a406-4152869dd47d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="adea9f6d-8cdf-40a5-a406-4152869dd47d" testId="893605cd-a9f6-3277-ee1a-3ea98d57191b" testName="TestRemoveActionFolder" computerName="JONORRI-WS" duration="00:00:10.6310000" startTime="2012-05-29T17:56:54.5700118+00:00" endTime="2012-05-29T17:57:05.2010118+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adea9f6d-8cdf-40a5-a406-4152869dd47d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

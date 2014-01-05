@@ -1,0 +1,7 @@
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\bin\Release\Nonoe.ActionFolders.DAL.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\bin\Release\Nonoe.ActionFolders.DAL.pdb
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\bin\Release\Nonoe.ActionFolders.Objects.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\bin\Release\Nonoe.ActionFolders.Objects.pdb
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\obj\Release\Nonoe.ActionFolders.DAL.dll
+C:\Users\jonorri\SkyDrive\sc\BitBucket\actionfolders-practice\Nonoe.ActionFolders\Nonoe.ActionFolders.DAL\obj\Release\Nonoe.ActionFolders.DAL.pdb
